@@ -1,0 +1,48 @@
+<!ELEMENT university (college+, building+)>
+<!ELEMENT college (profession+)>
+<!ELEMENT building (room*)>
+<!ELEMENT profession (faculty+, student*)>
+<!ELEMENT room EMPTY>
+<!ELEMENT faculty (professor*, lecturer*)>
+<!ELEMENT student EMPTY>
+<!ELEMENT professor EMPTY>
+<!ELEMENT lecturer EMPTY>
+<!ATTLIST university
+        name ID #REQUIRED
+        location CDATA #REQUIRED
+>
+<!ATTLIST college
+        name ID #REQUIRED
+        dean IDREF #REQUIRED
+        createData CDATA #IMPLIED
+>
+<!ATTLIST building
+        name ID #REQUIRED
+        floor CDATA #IMPLIED
+>
+<!ATTLIST profession
+        name ID #REQUIRED
+        departmentHead IDREF #REQUIRED
+        rating CDATA #IMPLIED
+>
+<!ATTLIST room
+        id CDATA #REQUIRED
+>
+<!ATTLIST student
+        name ID #REQUIRED
+        sex CDATA #REQUIRED
+        phone CDATA #IMPLIED
+>
+<!ATTLIST professor
+        name ID #REQUIRED
+        sex CDATA #REQUIRED
+        room CDATA #IMPLIED
+        phone CDATA #IMPLIED
+>
+<!ATTLIST lecturer
+        name ID #REQUIRED
+        sex CDATA #REQUIRED
+        phone CDATA #IMPLIED
+>
+
+

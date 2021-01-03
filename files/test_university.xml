@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE university SYSTEM "src/main/resources/university.dtd">
+
+<university name="China_University_of_Petromleum" location="Beijing">
+    <college name="CISE" dean="WeifengLiu">
+        <profession name="CS" departmentHead="LianenJi" rating="B-">
+            <faculty>
+                <professor name="WeifengLiu" sex="male" phone="188xxxxxxxx"></professor>
+                <professor name="LianenJi" sex="male"></professor>
+                <lecturer name="JiangboFan" sex="female"></lecturer>
+            </faculty>
+            <student name="YuanzhenLuo" sex="male" phone="138xxxx7813"/>
+        </profession>
+    </college>
+    <building name="library">
+        <room id="303"></room>
+    </building>
+</university>
